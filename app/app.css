@@ -13,3 +13,36 @@ body {
     color-scheme: dark;
   }
 }
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(
+        80deg,
+        #6db5f866 .47%,
+        #999cf766 9.8%,
+        #d98ef366 17.42%,
+        #fbdcff3d 31.59%,
+        #cb5bd83d 46.87%,
+        #d98ef366 55.73%,
+        #999cf766 65.02%,
+        #cae5ff66 77.71%,
+        #6db5f866 89.55%,
+        #72ddff66 98.78%
+      ),
+      #f8f6f2;
+  }
+  .bg-btn-gradient {
+    background: linear-gradient(
+      80deg,
+      #6db5f866 .47%,
+      #999cf766 9.8%,
+      #d98ef366 17.42%,
+      #fbdcff3d 31.59%,
+      #cb5bd83d 46.87%,
+      #d98ef366 55.73%,
+      #999cf766 65.02%,
+      #cae5ff66 77.71%,
+      #6db5f866 89.55%,
+      #72ddff66 98.78%
+    );
+  }
+}
