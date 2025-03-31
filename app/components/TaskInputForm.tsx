@@ -22,9 +22,11 @@ const TaskInputForm = () => {
         setTask(initialState)
     }
   return (
-    <form onSubmit={onSubmit} className=" h-1/4 w-full flex justify-around items-center">
+    <form onSubmit={onSubmit} className=" h-1/4 w-full flex justify-around items-center ">
         <div className="flex flex-col">
+            <div className="flex justify-between pr-[20px]">
             <label htmlFor="">Task Title
+            </label>
                 <input
                     type="text"
                     value={task.title}
@@ -32,10 +34,12 @@ const TaskInputForm = () => {
                     placeholder="Enter Your Task Title"
                     onChange={onChange}
                     required
-                    className=""
+                    className="text-black"
                     />
-            </label>
+            </div>
+            <div className="flex justify-between pr-[20px]">
             <label htmlFor="">Task description
+            </label>
                 <input
                     type="text"
                     value={task.description}
@@ -43,10 +47,12 @@ const TaskInputForm = () => {
                     placeholder="Enter Your description"
                     max={250}
                     onChange={onChange}
+                    className="text-black"
+                    
                     />
-            </label>
+            </div>
         </div>
-    <button type="submit" className="p-[20px] bg-amber-50 border-2 rounded-sm text-black">
+    <button type="submit" className="bg-btn-gradient p-[20px] bg-amber-50 border-2 rounded-sm text-black">
         Add Task
     </button>
 </form>

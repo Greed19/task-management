@@ -51,10 +51,10 @@ const TaskCard = ({task}:{task:Task}) => {
                     />
         </>: <p>{description}</p>}
         </div>
-        <div className="flex justify-around">
-            <button className="border-2 bg-yellow-50 p-2" onClick={onEdit}>{isEdit ? 'SAVE':'EDIT'}</button>
-            <button className="border-2 bg-yellow-50 p-2" onClick={onChangeStats}>COMPLETE</button>
-            <button className="border-2 bg-yellow-50 p-2" onClick={() => deleteTasks(id)}>DELETE</button>
+        <div className="flex justify-around gap-[10px]">
+            <button className="border-2 bg-btn-gradient p-2" onClick={onEdit}>{isEdit ? 'SAVE':'EDIT'}</button>
+            <button className="border-2 bg-btn-gradient p-2" onClick={onChangeStats}>COMPLETE</button>
+            <button className="border-2 bg-btn-gradient p-2" onClick={() => deleteTasks(id)}>DELETE</button>
         </div>
     </section>
   )
